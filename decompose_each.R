@@ -8,8 +8,9 @@ print(head(IIP))
 
 # —v‘f•ª‰ð
 pngFileName <- paste("./industrial/IIP_compose_sibou_random.png",sep="")
-png(file=pngFileName,res=400, w=1000, h=1500,pointsize=5)
-plot(decompose(IIP))
+png(file=pngFileName,res=400, w=1000, h=600,pointsize=5)
+decompose_IIP <-  decompose(IIP)
+plot(decompose_IIP$random)
 dev.off()
 
 #install.packages("forecast")
